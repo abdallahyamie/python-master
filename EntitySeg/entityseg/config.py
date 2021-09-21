@@ -93,3 +93,10 @@ def add_entity_config(cfg):
 
     # # addation
     cfg.MODEL.FPN.TOP_LEVELS = 2
+
+    ## mit former
+    cfg.MODEL.MIT_BACKBONE = CN()
+    cfg.MODEL.MIT_BACKBONE.NAME = "b0"
+
+    cfg.SOLVER.OPTIMIZER = "sgd"
+    cfg.TEST.CLASS_AGNOSTIC = True
